@@ -1,0 +1,63 @@
+<!-- Photo(ro)bot -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo(ro)bot</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="text-center mb-4">
+      <div class="navbar-container my-3">
+        <a href="#" class="h1 navbar-text">photo<span>ro</span>bot</a>
+      </div>
+    </nav>
+
+    <div class="container mb-4 text-center chat-window">
+      <div class="text-center" id="imageContainer"></div>
+      <form id="propmtForm">
+        <div class="mb-3">
+          <label for="promptInput" class="form-label h5"
+            >Генерация фоторобота</label
+          >
+          <textarea
+            class="form-control shadow-sm"
+            id="promptInput"
+            rows="3"
+            placeholder="Введите промпт для генерации фоторобота..."
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark shadow-sm px-4">
+          Сгенерировать
+        </button>
+      </form>
+    </div>
+
+    <footer>
+      <p>
+        <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+      </p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
